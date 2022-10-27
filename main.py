@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import time
+import config
 
 chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
@@ -16,8 +17,8 @@ LOGIN_URL = "https://stage.outreach.sloovi.com/login"
 TASK_PAGE_URL = "https://stage.outreach.sloovi.com/lead/lead_7e0ce02cc9854ceeb61ea58bbae3f2b6"
 OPPORTUNITY_PAGE_URL = " https://stage.outreach.sloovi.com/lead/lead_7e0ce02cc9854ceeb61ea58bbae3f2b6"
 
-valid_email = "smithwills1989@gmail.com"
-valid_password = "12345678"
+valid_email = config.valid_email
+valid_password = config.valid_password
 
 # PATHs
 login_button_path = '//*[@id="main"]/section/div[2]/form/div[2]/button'
